@@ -122,6 +122,11 @@
   width:100%;
   height:auto;
   }
+  .time{
+  text-align:center;
+  line-height:50px;
+  font-size:20px;
+  }
   </style>
  </head>
  <body>
@@ -185,7 +190,14 @@
 	</div>
 </div>
   <div class="con-right">
-  <div class="time">时间</div>
+  <div class="time">
+   <div id="show_time0" style="">  
+    <script>  
+//这里就一句话就可以显示时间，但不是我想要的最理想结果  
+ setInterval("show_time0.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);    
+    </script>  
+   </div> 
+  </div>
   <div class="calendar">日历</div>
   <div class="music">
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="300" height="450" src="//music.163.com/outchain/player?type=0&amp;id=2016020043&amp;auto=0&amp;height=430"></iframe>
