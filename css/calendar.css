@@ -6,6 +6,7 @@ ul, li { list-style: none; }
 .calendar {
   display: none;
   width: 280px;
+  height:250px;
   padding: 4.5px 10px 0;
   margin: 0px auto 0;
   background-color: #fafafa;
@@ -79,7 +80,7 @@ ul, li { list-style: none; }
   font-size: 16px;
 }
 .calendar-date {
-height£º150px£»
+heightÂ£Âº150pxÂ£Â»
 }
 .calendar-date .item {
   border-radius: 50%;
