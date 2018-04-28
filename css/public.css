@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+  height:100%;
+  background:#aad2ec/*url(./image/bg.jpg)*/;
+  background-position:center; 
+  background-repeat:no-repeat; 
+  }
+  *{
+  margin:0px;
+  padding:0px;
+  }
+  .header{
+  width:100%;
+  height:150px;
+  background:#0f171b;
+  }
+  .nav{
+  width:100%;
+  height:50px;
+  /*padding-top:150px;*/
+  margin:0 auto;
+  background:#4a4a4a;
+  border-bottom:4px solid #049ade;
+  }
+  .nav ul li{
+  float:left;
+  list-style:none;
+  font-size:24px;
+  /*color:white;*/
+  text-align:center;
+  line-height:50px;
+  }
+  .nav ul{
+  width:1220px;
+  margin:0 auto; 
+  }
+  .nav li{
+  width:120px;
+  height:100%;
+  }
+  /*li:visited{
+  background:#cccccc;
+  }*/
+  .nav li:hover{
+  background:#1f89dd;
+  }
+  .current{
+  background:#049ade;
+  /*color:#ccc!important;*/
+  }
+  a{
+  text-decoration: none;
+  }
+  li>a{
+  color:#fff;
+  }
+  .content{
+  width:1220px;
+  height:100%;
+  /*background:#f2f2f2;*/
+  margin:20px auto;
+  }
+  .con-left{
+  width:900px;
+  height:100%;
+  background:#f2f2f2;
+  float:left;
+  margin-right：20px；
+  }
+  .text img{
+  float:right;
+  width:200px;
+  height:140px;
+  margin-right:20px;
+  }
+  .text{
+  width:900px;
+  height:140px;
+  margin-top:20px;
+  }
+  .text a{
+  color:#000000;
+  }
+  h3{
+  width:640px;
+  height:30px;
+  font-size:18px;
+  line-height:30px;
+  padding:0 20px;
+  } 
+  .dateview{
+  width:640px;
+  height:20px;
+  padding:10px 20px 0 20px;
+  }
+  .dateview span{
+  margin-right:10px;
+	  }
+  .contain-text{
+  width:640px;
+  height:72px;
+  padding:10px 20px 0 20px;
+  line-height:24px;
+  }
+  .contain-text span{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  }
+  .con-right{
+  width:300px;
+  height:100%;
+  background:#f2f2f2;
+  float:right;
+  }
+  .time{
+  width:280px;
+  height:50px;
+  margin:0 auto;
+  text-align:center;
+  line-height:50px;
+  font-size:20px;
+  margin-bottom:20px;
+  }
+  .calendar-c{
+  width:300px;
+  height:250px;
+  margin-bottom:20px;
+  }
+  .music{
+  width:100%;
+  height:auto;
+  margin-bottom:20px;
+  }
