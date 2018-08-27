@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <link rel="shortcut icon" href="favicon.ico" >
   <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/vue.js"></script>
 	 
   <title>这是重新做的版面啦</title>
   <style>
@@ -168,8 +170,12 @@
   </ul>
   </div>
   <div class="content">
-<div class="con-left">
-    <div class="text">
+<div class="con-left" id="con-text">
+<transition-group
+	appear
+	appear-active-class="animated fadeInUp"
+>
+    <div class="text" key="text1"> 
 	 <img src="image/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年… ">
 	      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那年】Android</a></h3>
 		  <p class="dateview"><span>2018-01-21</span><span>作者：SuRn</span><span>个人博客：[<a href="/jstt/bj/">Android</a>]</span></p>
@@ -178,7 +184,7 @@
                <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
 		       </p>
     </div>
-	<div class="text">
+	<div class="text" key="text2">
 	<img src="image/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年… ">
 	      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那年】Java</a></h3>
 		  <p class="dateview"><span>2018-01-21</span><span>作者：SuRn</span><span>个人博客：[<a href="/jstt/bj/">Java</a>]</span></p>
@@ -187,7 +193,7 @@
                <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
 		     </p>
 	</div>
-	<div class="text">
+	<div class="text" key="text3">
 	    <img src="image/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年… ">
 	      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那年】HTML</a></h3>
 		  <p class="dateview"><span>2018-01-21</span><span>作者：SuRn</span><span>个人博客：[<a href="/jstt/bj/">HTML</a>]</span></p>
@@ -196,7 +202,7 @@
                <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
 		    </p>
     </div>
-	<div class="text">
+	<div class="text" key="text4">
 	    <img src="image/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年… ">
 	      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那年】Android1</a></h3>
 		  <p class="dateview"><span>2018-01-21</span><span>作者：SuRn</span><span>个人博客：[<a href="/jstt/bj/">Android</a>]</span></p>
@@ -205,7 +211,7 @@
                <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
 		    </p>
 	</div>
-	<div class="text">
+	<div class="text" key=""text5>
 	    <img src="image/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年… ">
 	      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那年】Java2</a></h3>
 		  <p class="dateview"><span>2018-01-21</span><span>作者：SuRn</span><span>个人博客：[<a href="/jstt/bj/">Java</a>]</span></p>
@@ -214,7 +220,13 @@
                <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
 		    </p>
 	</div>
+	</transition-group>
 </div>
+	  <script>
+	  	var conText=new Vue({
+		el:'#con-text"
+		})
+	  </script>
   <div class="con-right">
   <div class="time">
    <div id="show_time0" style="">  
